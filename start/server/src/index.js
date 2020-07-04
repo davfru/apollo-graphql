@@ -11,6 +11,9 @@ const store = createStore();
 const server = new ApolloServer({ 
     typeDefs,
     resolvers,
+    engine: {
+        reportSchema: true
+    },
     dataSources: () => ({
         launchAPI: new LaunchAPI(),
         userAPI: new UserAPI({ store })
