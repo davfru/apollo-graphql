@@ -38,7 +38,7 @@ class LaunchAPI extends RESTDataSource {
             id: launch.rocket.rocket_id,
             name: launch.rocket.rocket_name,
             type: launch.rocket.rocket_type,
-          },
+          }
         };
       }
 }
